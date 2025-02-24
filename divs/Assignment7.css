@@ -1,0 +1,131 @@
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 50px 50px;
+}
+.circle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: green;
+  margin: 50px 50px;
+}
+.container {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 60px;
+  border: 2px solid black;
+  margin: 50px 50px;
+}
+.ytcontainer {
+  vertical-align: top;
+  display: inline-block;
+  padding: 5px 30px;
+  margin: 0px 10px;
+  border: 2px solid black;
+  background-color: rgb(30, 30, 30);
+  margin-bottom: 50px;
+}
+.yt_head {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0px;
+}
+.yt_sub {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: gray;
+  width: 400px;
+}
+.dp {
+  vertical-align: middle;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+.bar {
+  display: block;
+  width: 340px;
+  padding: 5px 5px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 5px;
+  margin: 50px 50px;
+}
+.ip4 {
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  border: none;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.597);
+}
+.button_tweet {
+  vertical-align: middle;
+  padding: 10px 16px;
+  margin: 2px 4px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: box-shadow 0.15s;
+}
+.button_tweet:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.534);
+}
+.fullbox {
+  display: inline-block;
+  box-shadow: 0px 2px 5px gray;
+  margin: 50px 50px;
+}
+
+.box2,
+.desc {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.frnds {
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+}
+.button_addfrnd {
+  border: none;
+  padding: 10px 10px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-family: arial;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.boxes_3 {
+    display: inline-block;
+  padding: 10px 10px;
+  margin: 50px 50px;
+}
+.first,.second,.third {
+  display: inline-block;
+  margin: 10px 10px;
+  box-shadow: 0px 2px 5px gray;
+}
