@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assignment8.css" />
+    <title>Assignment8</title>
+    <style>
+      .a11 {
+        display: grid;
+        grid-template-columns: 200px 75px;
+        margin-bottom: 50px;
+      }
+      .a22 {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin-bottom: 50px;
+      }
+      .a33 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin-bottom: 50px;
+      }
+      .catgrid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        align-items: center;
+        column-gap: 20px;
+        margin-bottom: 50px;
+      }
+      .dp {
+        vertical-align: middle;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+      }
+      .img_frnds {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        column-gap: 10px;
+        margin-bottom: 5px;
+      }
+      .button_addfrnd {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a11">
+      <div style="background-color: red">200px</div>
+      <div style="background-color: blue">75px</div>
+    </div>
+    <div class="a22">
+      <div style="background-color: red">col1</div>
+      <div style="background-color: blue">col2</div>
+      <div style="background-color: red">col3</div>
+    </div>
+    <div class="a33">
+      <div style="background-color: red">col1</div>
+      <div style="background-color: blue">col2</div>
+      <div style="background-color: red">col3</div>
+      <div style="background-color: blue">col4</div>
+      <div style="background-color: blue">col5</div>
+      <div style="background-color: red">col6</div>
+      <div style="background-color: blue">col7</div>
+      <div style="background-color: red">col8</div>
+    </div>
+    <div class="catgrid">
+      <div class="fullbox">
+        <div class="box1">
+          <img src="https://picsum.photos/200/300" alt="img" />
+        </div>
+        <div class="box2">
+          <p class="name">Oliver</p>
+          <div class="img_frnds">
+            <div>
+              <img src="https://picsum.photos/200/300" alt="img" class="dp" />
+            </div>
+            <div><p class="frnds">2 mutual friends</p></div>
+          </div>
+          <button class="button_addfrnd">Add Friend</button>
+        </div>
+      </div>
+      <div class="fullbox">
+        <div class="box1">
+          <img src="https://picsum.photos/200/300" alt="img" />
+        </div>
+        <div class="box2">
+          <p class="name">Oliver</p>
+          <div class="img_frnds">
+            <div>
+              <img src="https://picsum.photos/200/300" alt="img" class="dp" />
+            </div>
+            <div><p class="frnds">2 mutual friends</p></div>
+          </div>
+          <button class="button_addfrnd">Add Friend</button>
+        </div>
+      </div>
+      <div class="fullbox">
+        <div class="box1">
+          <img src="https://picsum.photos/200/300" alt="img" />
+        </div>
+        <div class="box2">
+          <p class="name">Oliver</p>
+          <div class="img_frnds">
+            <div>
+              <img src="https://picsum.photos/200/300" alt="img" class="dp" />
+            </div>
+            <div><p class="frnds">2 mutual friends</p></div>
+          </div>
+          <button class="button_addfrnd">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
