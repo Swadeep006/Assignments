@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9h</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="Enter something"
+      class="js-input"
+      onkeyup="showtext(event)"
+    />
+    <p class="js-result"></p>
+    <script>
+      function showtext(event) {
+        document.querySelector(".js-result").innerHTML = `${
+          document.querySelector(".js-input").value
+        }`;
+      }
+    </script>
+  </body>
+</html>

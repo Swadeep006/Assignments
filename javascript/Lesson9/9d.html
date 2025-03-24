@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9d</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter Name" class="js-input" />
+    <button type="submit" onclick="showbutton()">SUBMIT</button>
+    <p class="js-result"></p>
+    <script>
+      function showbutton() {
+        const result = document.querySelector(".js-input").value;
+        document.querySelector(".js-result").innerHTML = result;
+      }
+    </script>
+  </body>
+</html>
