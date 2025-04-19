@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>3Q</title>
+</head>
+<body>
+    <h2>tech stacks</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>React.js</li>
+    <li>Angular.js</li>
+    <li>Figma</li>
+  </ul>
+
+    <script>
+        const listItems=document.querySelectorAll('ul li');
+        console.log("All list times:",listItems);
+
+        listItems.forEach((item,index)=>{
+            console.log(`index ${index+1}:`,item.textContent);
+        });
+
+        listItems.forEach((item,index)=>{
+            if((index+1)%2===0){
+                item.classList.add('highlight');
+                console.log(`highlight class added to index ${index+1}`);
+            }
+        });
+
+        console.log(`total list items: ${listItems.length}`);
+    </script>
+</body>
+</html>
