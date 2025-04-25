@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  margin: 25px;
+  font-size: 14px;
+  transition: color 0.15ms;
+}
+li a:hover {
+  color: rgb(56, 126, 209);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 130px;
+}
+
+img {
+  width: 130px;
+}
+.box2 {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.box1 {
+  padding: 25px 220px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  position: sticky;
+}
+.menu {
+  margin: 0px 25px;
+  cursor: pointer;
+}
+i {
+  font-size: 20px;
+}
+.chargesbox{
+    padding: 50px 300px;
+    text-align: center;
+}
+.head{
+    font-size: 44px;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    margin-bottom: 0;
+}
+.tail{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(155, 155, 155)
+}
+.container{
+    display: flex;
+    padding: 20px 300px;
+}
+.zero{
+    width: 250px;
+}
+.card1{
+    width: 320px;
+    align-items: center;
+    margin: 0px 30px;
+}
+.p1{
+    font-size: 44px;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    margin-bottom: 0;
+
+}
