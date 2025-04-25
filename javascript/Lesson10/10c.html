@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10c</title>
+  </head>
+  <body>
+    <button class="js-button">Test</button>
+    <script>
+      const elem = document.querySelector(".js-button");
+      if (elem.classList.contains("js-button")) {
+        console.log(elem.classList.contains("js-button"));
+      } else {
+        console.log("not found");
+      }
+    </script>
+  </body>
+</html>
