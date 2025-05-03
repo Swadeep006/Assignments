@@ -1,0 +1,7 @@
+{
+  "spec_dir": ".",
+  "spec_files": ["login.spec.js"],
+  "helpers": [],
+  "stopSpecOnExpectationFailure": false,
+  "random": false
+}
