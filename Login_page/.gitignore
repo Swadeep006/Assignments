@@ -1,4 +1,11 @@
-/node_modules
-/spec 
-/package-lock.json
-/package.json
+# Ignore node_modules
+node_modules/
+
+# Ignore the spec folder
+spec/
+
+# Ignore package-lock.json (though it's generally recommended to keep it for dependencies)
+package-lock.json
+
+# Ignore package.json (but usually, you want to track this file)
+package.json
