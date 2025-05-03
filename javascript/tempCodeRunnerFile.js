@@ -1,0 +1,1 @@
+console.log("After revealMystery:", mysteryVariable);
