@@ -22,3 +22,9 @@ public:
         return true;
     }
 };
+/* 
+so here we used difference array which helps us to find how many times its gonna change when we add something or delete for each element in the array
+we need to initialize the difference array size+1 to that of given array so that we can sum up with prefix and that  size +1 is to add the stop point where we do -1
+we use prefix sum with this to solve the problem and check with the given nums array to find out whether it is possible to do array to all zeros or not
+
+ */
