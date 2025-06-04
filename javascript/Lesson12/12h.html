@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12h</title>
+  </head>
+  <body>
+    <button class="addmessages">Add</button>
+    <button class="deletemessages">Remove</button>
+    <script>
+      document.querySelector(".addmessages").addEventListener("click", () => {
+        messages += 1;
+      });
+      document
+        .querySelector(".deletemessages")
+        .addEventListener("click", () => {
+          messages -= 1;
+        });
+      let messages = 2;
+      setInterval(() => {
+        if (document.title === "12h") {
+          document.title = `(${messages}) New Messages`;
+        } else {
+          document.title = `12h`;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

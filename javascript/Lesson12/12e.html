@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12e</title>
+  </head>
+  <body>
+    <button class="update">Add to cart</button>
+    <p class="result"></p>
+    <script>
+      document.querySelector(".update").addEventListener("click", () => {
+        let answer = document.querySelector(".result");
+        answer.innerHTML = "Added";
+        setTimeout(function () {
+          answer.innerHTML = "";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

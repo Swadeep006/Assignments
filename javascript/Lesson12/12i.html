@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12i</title>
+  </head>
+  <body>
+    <button class="addmessages">Add</button>
+    <button class="deletemessages">Remove</button>
+    <script>
+      document.querySelector(".addmessages").addEventListener("click", () => {
+        messages++;
+        displayNotification();
+      });
+      document
+        .querySelector(".deletemessages")
+        .addEventListener("click", () => {
+          if (messages > 0) {
+            messages--;
+            if (messages == 0) {
+              stopNotification();
+            }
+          }
+        });
+      let messages = 2;
+      let intervalId;
+      let isDisplayNotification;
+      let displayNotification = () => {
+        if (isDisplayNotification) return;
+        isDisplayNotification = true;
+        intervalId = setInterval(function () {
+          if (document.title === "12i") {
+            document.title = `(${messages}) New Messages`;
+          } else {
+            document.title = `12i`;
+          }
+        }, 1000);
+      };
+      let stopNotification = () => {
+        isDisplayNotification = false;
+        clearInterval(intervalId);
+        document.title = "12i";
+      };
+    </script>
+  </body>
+</html>
