@@ -33,11 +33,7 @@ document.querySelector(".js-scissors-button").addEventListener("click", () => {
   UpdateScore("scissors");
 });
 document.querySelector(".reset-score-button").addEventListener("click", () => {
-  score.lose = 0;
-  score.win = 0;
-  score.tie = 0;
-  updateScoreElem();
-  localStorage.removeItem("score");
+  showConfirmation();
 });
 document.querySelector(".auto-play-button").addEventListener("click", () => {
   autoPlay();
@@ -57,13 +53,41 @@ document.body.addEventListener("keydown", (event) => {
     autoPlay();
   }
   if (event.key === "Backspace") {
-    score.lose = 0;
-    score.win = 0;
-    score.tie = 0;
-    updateScoreElem();
-    localStorage.removeItem("score");
+    showConfirmation();
   }
 });
+
+function showConfirmation() {
+  document.querySelector(".reset-score-confirmation").innerHTML = `
+    Are you sure you want to reset the score?
+    <button class="js-reset-confirm-yes reset-confirm-button">
+      Yes
+    </button>
+    <button class="js-reset-confirm-no reset-confirm-button">
+      No
+    </button>
+  `;
+
+  document
+    .querySelector(".js-reset-confirm-yes")
+    .addEventListener("click", () => {
+      score.lose = 0;
+      score.win = 0;
+      score.tie = 0;
+      updateScoreElem();
+      localStorage.removeItem("score");
+      hideResetConfirmation();
+    });
+
+  document
+    .querySelector(".js-reset-confirm-no")
+    .addEventListener("click", () => {
+      hideResetConfirmation();
+    });
+}
+function hideResetConfirmation() {
+  document.querySelector(".reset-score-confirmation").innerHTML = "";
+}
 
 function UpdateScore(string) {
   let playermove = string;
